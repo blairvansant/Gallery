@@ -1,18 +1,22 @@
-import * as firebase from 'firebase/app';
-import 'firebase/storage';
-import 'firebase/firestore'
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
+import 'firebase/compat/storage';
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBHFk4k34ZEols-dcvG8OLDWEJVKm198Iw",
-  authDomain: "badbot-gallery.firebaseapp.com",
-  projectId: "badbot-gallery",
-  storageBucket: "badbot-gallery.appspot.com",
-  messagingSenderId: "335838503308",
-  appId: "1:335838503308:web:25a88f4a16fbb3cc0576a9",
-  measurementId: "G-04G8260PTS"
+  apiKey: "AIzaSyD2fIOg2iAOh7qg93t8fxcnKiMbq5yQE_0",
+  authDomain: "badbot-slideshow-9bb3b.firebaseapp.com",
+  projectId: "badbot-slideshow-9bb3b",
+  storageBucket: "badbot-slideshow-9bb3b.appspot.com",
+  messagingSenderId: "892992024194",
+  appId: "1:892992024194:web:34c2acfe510b18cdb34e9b"
 };
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+
+firebase.initializeApp(firebaseConfig)
+
+// const projectStorage = require('@google-cloud/storage')
+
 
 const projectStorage = firebase.storage();
 const projectFirestore = firebase.firestore();
