@@ -1,3 +1,4 @@
+import ImageGrid from "./comps/ImageGrid";
 import Title from "./comps/Title"; 
 import UploadForm from "./comps/UploadForm";
 
@@ -7,6 +8,7 @@ function App() {
       <header className="App-header">
         <Title />
         <UploadForm />
+        <ImageGrid />
       </header>
     </div>
   );
