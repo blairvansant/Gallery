@@ -3,7 +3,9 @@ import React from "react";
 const Modal = ({ selectedImg, setSelectedImg }) => {
 
   const handleClick = (e) => {
-    setSelectedImg(null);
+    if(e.target.classList.contains('backdrop')){
+      setSelectedImg(null);
+    }
   }
 
   return (
